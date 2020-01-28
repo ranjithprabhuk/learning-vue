@@ -9,10 +9,15 @@
 <body>
   <div id="app">
     Container for view
+    <p> {{content}} </p>
   </div>
   <script type="text/javaScript">
-         			Script code goes here
-      		</script>
+    var app = new Vue({
+ 			el: '#app',
+			data: { content: 'Hey welcome to VueJS learning...' }
+    });
+
+  </script>
 </body>
 
 </html>
