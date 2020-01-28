@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> VueJs </title>
+  <script type="text/javaScript" src="./js/vue.js"></script>
+</head>
+
+<body>
+  <div id="app" >
+   <h3>Adding data</h3>
+   <hr>
+   <h3>Emp Details</h3>
+   EmpName: {{empName}} <br/>
+   EmpId: {{empId}}<br/>
+   Unit: {{unit}}<br/>
+</div>
+
+<script type = "text/javascript">
+
+var empDetails={empId: 123456, empName: 'Ranjith', unit: 'Unit'}
+var app= new Vue({
+                  el: '#app',
+                  data: empDetails
+});
+
+</script>
+</body>
+
+</html>
